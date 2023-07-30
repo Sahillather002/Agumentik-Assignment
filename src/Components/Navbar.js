@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import './Navbar.css'; // Import your CSS file for styling
 import logo from '../Images/promaLogo.png';
 import {AiOutlineArrowRight} from "react-icons/ai"
+
+
 const Navbar = () => {
+
   return (
+    
     <nav className="beautiful-navbar">
+    
+
       <div className="navbar-container">
         <div>
           <img src={logo} alt="My logo"></img>
@@ -27,11 +33,12 @@ const Navbar = () => {
         <h1>
             AND START PROJECT
         </h1>
-        <p className='navP'>
-            A membership program is a marketing startegy used by companies to reward their 
-            {'\n'}customers for their loyalty and repeat business.Joining a membership program usually
-            involves signing up and paying a fee or fulfilling certain criteria.
-        </p>
+            <div className='navP'>
+            <h4>A membership program is a marketing startegy used by companies to reward their 
+            </h4><h4>customers for their loyalty and repeat business.Joining a membership program usually
+            </h4><h4>involves signing up and paying a fee or fulfilling certain criteria.
+            </h4>
+            </div>
       </div>
       <div>
         <button className='navButton'>
