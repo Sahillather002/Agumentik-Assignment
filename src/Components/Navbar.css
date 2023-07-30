@@ -4,6 +4,11 @@
     text-decoration-color:#ff8800;
     
 }
+
+.logo{
+    width: 300px;
+    margin-right: 30%;
+}
 .beautiful-navbar {
     background-color: #191d1b;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -14,12 +19,16 @@
   .navbar-container {
     max-width: 1600px;
     margin: 0 auto;
-    display: flex-1;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr ;
     align-items: center;
   }
   
+  .list{
+    border-radius: 2px;
+    color: #174ea6;
+    
+  }
   .brand-logo a {
     font-size: 1.5rem;
     color: #333333;
@@ -32,7 +41,6 @@
     display: flex-1;
     display: flex;
     text-align: center;
-    margin-right: 250px;
     
   }
   
@@ -54,7 +62,7 @@
 
   .navHead{
     color:aliceblue;
-    font-size: xx-large;
+    font-size: 50px;
     text-align: center;
     margin:2px;
     padding: 30px;
@@ -62,7 +70,7 @@
   
   .navP{
     color: aliceblue;
-    font-size: small;
+    font-size: medium;
   }
 
 
@@ -141,9 +149,9 @@
   background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
   border: 0;
   border-radius: 12px;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 25px;
-  margin-bottom: 270px;
+  margin-bottom: 2000px;
   cursor: pointer;
   display: inline-block;
   font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;

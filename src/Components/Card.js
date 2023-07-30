@@ -1,5 +1,7 @@
 import React, { useState, useRef } from "react";
 import "./Card.css";
+import {AiOutlineArrowRight} from "react-icons/ai"
+
 
 export default function Card() {
   const [xRotation, setXRotation] = useState(0);
@@ -10,16 +12,16 @@ export default function Card() {
   const descRef = useRef(null);
   const purchaseRef = useRef(null);
 
-  function handleMouseMove(event) {
-    const card = cardRef.current;
-    const { offsetWidth: width, offsetHeight: height } = card;
-    const { clientX, clientY } = event;
-    const x = clientX - card.offsetLeft - width / 2;
-    const y = clientY - card.offsetTop - height / 2;
-    var mult = 40;
-    setXRotation((y / height) * mult);
-    setYRotation((x / width) * mult);
-  }
+//   function handleMouseMove(event) {
+//     const card = cardRef.current;
+//     const { offsetWidth: width, offsetHeight: height } = card;
+//     const { clientX, clientY } = event;
+//     const x = clientX - card.offsetLeft - width / 2;
+//     const y = clientY - card.offsetTop - height / 2;
+//     var mult = 40;
+//     setXRotation((y / height) * mult);
+//     setYRotation((x / width) * mult);
+//   }
   function handleMouseEnter() {
     const img = imgRef.current;
     const title = titleRef.current;
@@ -50,14 +52,14 @@ export default function Card() {
         style={{
           transform: `rotateX(${xRotation}deg) rotateY(${yRotation}deg)`,
         }}
-        onMouseMove={handleMouseMove}
+        //onMouseMove={handleMouseMove}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
         <img
           ref={imgRef}
           src={require("../Images/portfolio1.jpg")}
-          alt="Nike-Shoe"
+          alt="Dashboard Design"
           className="sneaaker-img"
         />
         <h1 className="title" ref={titleRef}>
@@ -76,7 +78,10 @@ export default function Card() {
         </ul> */}
         <div className="button-box" ref={purchaseRef}>
           <button className="purchase" >
-            Purchase
+            <span>Learn More   </span>
+            <span>
+                <AiOutlineArrowRight/>
+            </span>
           </button>
         </div>
       </div>
@@ -87,22 +92,23 @@ export default function Card() {
         style={{
           transform: `rotateX(${xRotation}deg) rotateY(${yRotation}deg)`,
         }}
-        onMouseMove={handleMouseMove}
+        //onMouseMove={handleMouseMove}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
         <img
           ref={imgRef}
           src={require("../Images/portfolio2.png")}
-          alt="Nike-Shoe"
+          alt="Website Design"
           className="sneaaker-img"
         />
         <h1 className="title" ref={titleRef}>
-          Nike Dunk High
+          Website Desgin
         </h1>
         <p ref={descRef}>
-          Nike Dunk High is a high-top version of the classic Nike Dunk sneaker,
-          featuring a padded collar for added support and comfort.
+            With a focus on innovation and creativity, we leverage cutting-edge design
+            techniques and technologies to create exceptional user experience that
+            stand out from the crowd.
         </p>
         {/* <ul className="sizes-box" ref={sizesboxRef}>
           <li>38</li>
@@ -112,7 +118,10 @@ export default function Card() {
         </ul> */}
         <div className="button-box" ref={purchaseRef}>
           <button className="purchase" >
-            Purchase
+            <span>Learn More   </span>
+            <span>
+                <AiOutlineArrowRight/>
+            </span>
           </button>
         </div>
       </div>
