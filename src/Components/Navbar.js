@@ -33,10 +33,10 @@ const Navbar = () => {
         World Class Creatives
       </button>
       <div className='navHead'>
-        <h1>
+        <h1 style={{fontSize:"100px",marginBottom:"-80px"}}>
             JOIN OUR MEMBERSHIP
         </h1>
-        <h1>
+        <h1 style={{fontSize:"100px"}}>
             AND START PROJECT
         </h1>
             <div className='navP'>
@@ -48,9 +48,9 @@ const Navbar = () => {
       </div>
       <div>
         <button className='navButton'>
-            <span>Lets go</span>
+            <span style={{fontSize:"30px"}}>Lets go  </span>
             <span>
-                <AiOutlineArrowRight/>
+                <AiOutlineArrowRight size={30}/>
             </span>
         </button>
       </div>

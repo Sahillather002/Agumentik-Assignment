@@ -49,6 +49,7 @@
   .title,
   .card p {
     width: 100%;
+    font-size: large;
     color: rgb(220, 220, 220);
   }
   .sizes-box {

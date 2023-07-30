@@ -2,40 +2,12 @@ import React from 'react'
 import { useRef } from 'react';
 import './Member.css'
 import people from '../Images/people.png'
-import circle from '../Images/circle.jpg'
-
-const cardData = [
-    {
-        id: 1,
-        title: 'Card 1',
-        image: 'https://via.placeholder.com/300',
-    },
-    {
-        id: 2,
-        title: 'Card 2',
-        image: 'https://via.placeholder.com/300',
-    },
-    {
-        id: 3,
-        title: 'Card 3',
-        image: 'https://via.placeholder.com/300',
-    },
-    {
-        id: 4,
-        title: 'Card 4',
-        image: 'https://via.placeholder.com/300',
-    },
-    {
-        id: 5,
-        title: 'Card 5',
-        image: 'https://via.placeholder.com/300',
-    },
-    {
-        id: 6,
-        title: 'Card 6',
-        image: 'https://via.placeholder.com/300',
-    },
-];
+import circle from '../Images/circle.png'
+import second from '../Images/second.png'
+import third from '../Images/third.png'
+import fourth from '../Images/fourth.png'
+import fifth from '../Images/fifth.png'
+import sixth from '../Images/sixth.png'
 
 const Member = () => {
     const descRef = useRef(null);
@@ -64,7 +36,7 @@ const Member = () => {
             </div> */}
 
             <div style={{display:"grid",gridTemplateColumns:"repeat(3,1fr)",width:"90%",margin:"0 5%"}}>
-                <div style={{border:"1px solid white",backgroundColor:"black",color:"white"}}>
+                <div className='blackCard'>
                     <img src={circle} style={{width:"100px",height:"100px",marginTop:"4px"}}/>
                     <div>
                         <h1>SPEEDY TURNOVERS</h1>
@@ -76,11 +48,65 @@ const Member = () => {
                     </div>
                 </div>
 
-                <div style={{border:"1px solid white",backgroundColor:"lightgreen",color:"white"}}  >Secnd</div>
-                <div style={{border:"1px solid white",backgroundColor:"black",color:"white"}}>Third</div>
-                <div style={{border:"1px solid white",backgroundColor:"lightgreen",color:"white"}}>Fourrt</div>
-                <div style={{border:"1px solid white",backgroundColor:"black",color:"white"}}>fIfth</div>
-                <div style={{border:"1px solid white",backgroundColor:"lightgreen",color:"white"}}>Sixh</div>
+                <div className='greenCard'>
+                <img src={second} style={{width:"100px",height:"100px",marginTop:"4px"}}/>
+                    <div>
+                        <h1>SPECIAL PRICES</h1>
+                    </div>
+                    <div style={{width:"70%",marginLeft:"14%",fontSize:"20px"}}>
+                        <p>
+                            Discounted pricing or unique rates offerred for certain design services.                
+                        </p>
+                    </div>
+                </div>
+
+                <div className='blackCard'>
+                <img src={third} style={{width:"100px",height:"100px",marginTop:"4px"}}/>
+                    <div>
+                        <h1>PRIVATE DESIGNER</h1>
+                    </div>
+                    <div style={{width:"70%",marginLeft:"14%",fontSize:"20px"}}>
+                        <p>
+                            Freelance or contract designer who works directly with clients.
+                        </p>
+                    </div>
+                </div>
+
+                <div className='greenCard'>
+                <img src={fourth} style={{width:"100px",height:"100px",marginTop:"4px"}}/>
+                    <div>
+                        <h1>FREE FEEDBACK</h1>
+                    </div>
+                    <div style={{width:"70%",marginLeft:"14%",fontSize:"20px"}}>
+                        <p>
+                        Evaluation or critique of design work provided at no cost.
+                        </p>
+                    </div>
+                </div>
+
+                <div className='blackCard'>
+                <img src={fifth} style={{width:"100px",height:"100px",marginTop:"4px",color:"white"}}/>
+                    <div>
+                        <h1>NO FRUSTATION</h1>
+                    </div>
+                    <div style={{width:"70%",marginLeft:"14%",fontSize:"20px"}}>
+                        <p>
+                        Desing that is intuitive and easy to use, minimizing user frutstration and confusion.
+                        </p>
+                    </div>
+                </div>
+
+                <div className='greenCard'>
+                <img src={sixth} style={{width:"100px",height:"100px",marginTop:"4px"}}/>
+                    <div>
+                        <h1>PRIVATE DEVELOPER</h1>
+                    </div>
+                    <div style={{width:"70%",marginLeft:"14%",fontSize:"20px"}}>
+                        <p>
+                            Freelance or contract developer who works directly with clients.
+                        </p>
+                    </div>
+                </div>
             </div>
 
             <div>

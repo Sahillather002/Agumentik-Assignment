@@ -11,7 +11,9 @@ const Portfolio = () => {
                 PORTFOLIO OF OUR WORK
                 IN THE PAST YEAR
             </h1>
+            <div style={{marginTop:"5%"}}>
             <Card/>
+            </div>
         </div>
     )
 }
